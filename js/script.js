@@ -21,10 +21,13 @@ const substractNumbers = (num1, num2) => {
     return result;
 }
 
-// 
+//  Multiplica dos números
 const multiplyNumbers = (num1, num2) => {
-    let result = num1 * num2;
-    return result;
+    let product = num1;
+    for (let i = 1; i < num2; i++) {
+        product += num1;
+    }
+    return product;
 }
 
 //  Divide dos números
@@ -35,7 +38,6 @@ const divideNumbers = (num1, num2) => {
         let result = num1 / num2;
         return result;
     }
-
 }
 
 //  Muestra los resultados
